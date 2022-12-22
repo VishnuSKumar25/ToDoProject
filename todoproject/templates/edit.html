@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <a class="btn btn-primary ms-3" href="{% url 'todoapp:index' %}" role="button">Cancel</a>
+    <button class="btn btn-success ms-3" type="submit">Confirm</button>
+  </form>
+{% endblock %}

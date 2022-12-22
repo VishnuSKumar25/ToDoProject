@@ -1,0 +1,10 @@
+.banner{
+    background-color: powderblue;
+    height:12rem;
+}
+
+.banner-text{
+    top:10%;
+    left:45%;
+    position: absolute;
+}

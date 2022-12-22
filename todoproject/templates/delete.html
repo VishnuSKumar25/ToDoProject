@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="m-5">
+            <label class="fw-bold">Are you sure this task is done?</label>
+            <a class="btn btn-primary ms-3" href="{% url 'todoapp:index' %}" role="button">Cancel</a>
+            <input class="btn btn-danger ms-3" type="submit" value="Delete">
+        </div>
+    </form>
+{% endblock %}
